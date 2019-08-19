@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-sparrow',
+  templateUrl: './sparrow.component.html',
+  styleUrls: ['./sparrow.component.css']
 })
-export class AppComponent {
-  title = 'navin';
+export class SparrowComponent implements OnInit {
   array=[
     {
       name:'navin',
@@ -70,6 +69,7 @@ export class AppComponent {
       edit:false
     }
   ]
+
   constructor( private router: Router ) { }
   detailEdit(index: number) {
     console.log('Editing');
@@ -80,4 +80,7 @@ export class AppComponent {
   console.log("row deleted");
     this.array.splice(index, 1);
 }
+  ngOnInit() {
+  }
+
 }

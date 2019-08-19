@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SparrowComponent } from './sparrow/sparrow.component';
+import { Sparrow2Component } from './sparrow2/sparrow2.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SparrowComponent,
+    Sparrow2Component
   ],
   imports: [
     BrowserModule,
